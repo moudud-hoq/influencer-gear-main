@@ -125,7 +125,11 @@ li {
 /* End Header Section */
 /* Start Popular Collection Section */
 
-main {}
+main {
+    padding: 10px 50px;
+    margin: 0 auto;
+
+}
 
 h2 {
     padding: 30px 0;
@@ -134,9 +138,21 @@ h2 {
 
 .products {
     border: 2px dotted crimson;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
 
 }
 
 .product-details {
+    width: 50%;
     padding: 5px;
+    border-radius: 5px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+
 }
