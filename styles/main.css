@@ -25,7 +25,6 @@ p {
 
 /* Start Header Section */
 header {
-    border: 2px solid brown;
     padding: 70px 110px;
     width: 100%;
     margin: 0 auto;
@@ -35,7 +34,6 @@ header {
 /* Top Header */
 .header-top {
     line-height: 50px;
-    border: 1px solid green;
     display: flex;
     justify-content: space-between;
 }
@@ -61,7 +59,6 @@ li {
 
 /* Camera Section */
 .camera-section {
-    border: 2px solid red;
     margin: 10px 0 0 0;
     padding: 30px 0 0 0px;
     width: 100%;
@@ -113,7 +110,6 @@ li {
 /* Company Logo Area */
 .company-logo {
     margin: 50px 0;
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,7 +121,6 @@ li {
 /* Start Popular Collection Section */
 
 main {
-    border: 3px solid red;
     width: 100%;
     padding: 5px 50px;
     margin: 0 auto;
@@ -211,60 +206,59 @@ footer {
 
 @media screen and (max-width:576px) {
 
-    p,
-    {
-    text-align: center;
-}
+    p {
+        text-align: center;
+    }
 
-#camera-section-title {
-    font-size: 40px;
-    text-align: center;
-}
+    #camera-section-title {
+        font-size: 40px;
+        text-align: center;
+    }
 
-.header-top,
-.camera-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .header-top,
+    .camera-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-header {
-    padding: 70px 30px;
-}
+    header {
+        padding: 70px 30px;
+    }
 
-.camera-section {
-    flex-direction: column-reverse;
-    padding: 0;
-    margin: 0;
-}
+    .camera-section {
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+    }
 
-.camera-section-left {
-    padding: 0;
-    margin: 0;
-}
+    .camera-section-left {
+        padding: 0;
+        margin: 0;
+    }
 
+    .company-logo {
+        gap: 40px 30px;
+        justify-content: center;
+    }
 
-.company-logo {
-    line-height: 50px;
-}
+    .featured-section {
+        text-align: center;
+        margin: 20px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
 
-.featured-section {
-    text-align: center;
-    margin: 20px 0;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-}
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
 
-.products {
-    display: flex;
-    flex-direction: column;
-}
-
-.custom-button {
-    width: 60%;
-    margin: 0 auto;
-    padding: 10px 20px;
-}
+    .custom-button {
+        width: 60%;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
 }
