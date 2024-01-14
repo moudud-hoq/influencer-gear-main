@@ -19,20 +19,27 @@
     --main-color: #3A3A3A;
 }
 
+p {
+    font-size: 12px;
+}
+
 /* Start Header Section */
 header {
+    border: 2px solid brown;
     padding: 70px 110px;
     width: 100%;
     margin: 0 auto;
     /* font-feature-settings: 'clig' off, 'liga' off; */
 }
 
+/* Top Header */
 .header-top {
+    border: 1px solid green;
     display: flex;
     justify-content: space-between;
 }
 
-.logo {
+.header-logo {
     color: var(--main-color);
     font-size: 20px;
     font-weight: 700;
@@ -43,9 +50,6 @@ ul {
     display: flex;
 }
 
-ul>li {
-}
-
 li {
     color: var(--main-color);
     font-size: 15px;
@@ -53,3 +57,81 @@ li {
     font-weight: 600;
     list-style: none;
 }
+
+/* Camera Section */
+.camera-section {
+    border: 2px solid red;
+    margin: 0 0 0 0;
+    padding: 40px 0 0 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    overflow: hidden;
+}
+
+.camera-section-left {
+    padding: 90px 0 0 0px;
+    max-width: 450px;
+
+
+}
+
+#camera-section-title {
+    color: var(--main-color);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 41px;
+    background: #E02C6D;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+}
+
+.arrow {
+    margin: 0 0 0 10px;
+}
+
+.camera-section-right {
+    padding: 45px 0 0 0;
+    background-image: url(../images/Circle\ design.png);
+    background-position: center;
+    background-size: cover
+}
+
+.camera-section-description {
+    padding: 15px 0 30px 0;
+}
+
+/* Company Logo Area */
+.company-logo{
+    margin: 50px 0;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+/* End Header Section */
+/* Start Popular Collection Section */
+
+
+
+.products{
+    border: 2px dotted crimson;
+}
+
+
+
