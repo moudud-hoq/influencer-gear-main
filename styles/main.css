@@ -61,8 +61,8 @@ li {
 /* Camera Section */
 .camera-section {
     border: 2px solid red;
-    margin: 0 0 0 0;
-    padding: 40px 0 0 0px;
+    margin: 10px 0 0 0;
+    padding: 30px 0 0 0px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -104,9 +104,7 @@ li {
 }
 
 .camera-section-right {
-    padding: 45px 0 0 0;
     background-image: url(../images/Circle\ design.png);
-    background-position: center;
     background-size: cover
 }
 
@@ -115,7 +113,7 @@ li {
 }
 
 /* Company Logo Area */
-.company-logo{
+.company-logo {
     margin: 50px 0;
     border: 2px solid red;
     display: flex;
@@ -127,11 +125,18 @@ li {
 /* End Header Section */
 /* Start Popular Collection Section */
 
+main {}
 
-
-.products{
-    border: 2px dotted crimson;
+h2 {
+    padding: 30px 0;
+    text-align: center;
 }
 
+.products {
+    border: 2px dotted crimson;
 
+}
 
+.product-details {
+    padding: 5px;
+}
