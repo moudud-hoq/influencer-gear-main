@@ -211,7 +211,6 @@ footer {
 
 @media screen and (max-width:576px) {
 
-
     .header-top {
         display: flex;
         flex-direction: column;
@@ -259,7 +258,8 @@ footer {
     }
 
     .company-logo {
-        gap: 25px 20px;
+        margin: 20px 0 0 0;
+        gap: 15px 10px;
         justify-content: center;
     }
 
@@ -269,6 +269,10 @@ footer {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+    }
+
+    main {
+        margin: 0;
     }
 
     .products {
