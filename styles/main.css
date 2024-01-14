@@ -34,6 +34,7 @@ header {
 
 /* Top Header */
 .header-top {
+    line-height: 50px;
     border: 1px solid green;
     display: flex;
     justify-content: space-between;
@@ -73,15 +74,12 @@ li {
 .camera-section-left {
     padding: 90px 0 0 0px;
     max-width: 450px;
-
-
 }
 
 #camera-section-title {
     color: var(--main-color);
     font-size: 32px;
     font-weight: 700;
-    line-height: 40px;
     overflow: hidden;
 }
 
@@ -120,6 +118,7 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
+    flex-wrap: wrap;
 }
 
 /* End Header Section */
@@ -177,6 +176,7 @@ h2 {
     color: rgba(224, 44, 109, 0.87);
     font-size: 13px;
     cursor: pointer;
+    font-weight: 800;
 }
 
 .material-symbols-outlined {
@@ -198,7 +198,7 @@ h4 {
 }
 
 
-footer{
+footer {
     gap: 20px;
     padding: 130px 0;
     background: #0A0826;
@@ -207,4 +207,64 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:576px) {
+
+    p,
+    {
+    text-align: center;
+}
+
+#camera-section-title {
+    font-size: 40px;
+    text-align: center;
+}
+
+.header-top,
+.camera-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    padding: 70px 30px;
+}
+
+.camera-section {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+}
+
+.camera-section-left {
+    padding: 0;
+    margin: 0;
+}
+
+
+.company-logo {
+    line-height: 50px;
+}
+
+.featured-section {
+    text-align: center;
+    margin: 20px 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-button {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
 }
