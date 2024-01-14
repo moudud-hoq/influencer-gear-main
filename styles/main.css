@@ -45,7 +45,7 @@ header {
 }
 
 ul {
-    gap: 28px;
+    gap: 25px;
     display: flex;
 }
 
@@ -204,8 +204,86 @@ footer {
     align-items: center;
 }
 
+
+@media screen and (max-width: 423px) {
+    .header-logo {}
+}
+
 @media screen and (max-width:576px) {
 
+
+    .header-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        padding: 70px 30px;
+    }
+
+    .header-logo {
+        font-size: 30px;
+    }
+
+    ul {
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        color: var(--main-color);
+        letter-spacing: -1px;
+    }
+
+    .camera-section {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #camera-section-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .camera-section-left {
+        padding: 0;
+        margin: 0;
+    }
+
+    .company-logo {
+        gap: 25px 20px;
+        justify-content: center;
+    }
+
+    .featured-section {
+        text-align: center;
+        margin: 0 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .custom-button {
+        width: 60%;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
     p {
         text-align: center;
     }
