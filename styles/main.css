@@ -43,11 +43,31 @@ header {
 }
 
 .header-logo {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #000000;
     font-family: 'Merienda', cursive;
-    color: var(--main-color);
+    color: #ffffff; 
     font-size: 2.5em;
     letter-spacing: -2px;
     font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
+}
+
+.header-logo:hover {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    transition: .8s ease ease-in-out;
+    transition-delay: all .8s;
+}
+
+.special-style {
+    font-family: 'Merienda', cursive;
+    color: #ddff1e;
+}
+
+.special-style:hover{
+    color: red;
 }
 
 ul {
