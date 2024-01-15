@@ -1,5 +1,7 @@
 /*Google Font Area */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&family=Merienda:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merienda:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     padding: 0;
@@ -10,9 +12,11 @@
 /* Common Styles in the website*/
 * {
     font-family: 'Inter', sans-serif;
+    font-family: 'Merienda', cursive;
     font-family: 'Merriweather', serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 :root {
@@ -20,12 +24,12 @@
 }
 
 p {
-    font-size: 12px;
+    font-size: .75em;
 }
 
 /* Start Header Section */
 header {
-    padding: 70px 110px;
+    padding: 4.40rem 6.80rem;
     width: 100%;
     margin: 0 auto;
     /* font-feature-settings: 'clig' off, 'liga' off; */
@@ -33,25 +37,27 @@ header {
 
 /* Top Header */
 .header-top {
-    line-height: 50px;
+    line-height: 3rem;
     display: flex;
     justify-content: space-between;
 }
 
 .header-logo {
+    font-family: 'Merienda', cursive;
     color: var(--main-color);
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: -2px;
+    font-weight: 900;
 }
 
 ul {
-    gap: 25px;
+    gap: 1.5rem;
     display: flex;
 }
 
 li {
     color: var(--main-color);
-    font-size: 15px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 600;
     list-style: none;
@@ -59,37 +65,38 @@ li {
 
 /* Camera Section */
 .camera-section {
-    margin: 10px 0 0 0;
-    padding: 30px 0 0 0px;
+    margin: .7rem 0 0 0;
+    padding: 2rem 0 0 0px;
+    gap: 5rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 80px;
     overflow: hidden;
 }
 
 .camera-section-left {
-    padding: 90px 0 0 0px;
-    max-width: 450px;
+    padding: 3rem 0 0 0;
+    max-width: 30rem;
 }
 
 #camera-section-title {
+    font-family: 'Merriweather', serif;
     color: var(--main-color);
-    font-size: 32px;
-    font-weight: 700;
-    overflow: hidden;
+    font-size: 1.9em;
+    letter-spacing: -.02em;
+    font-weight: 900;
 }
 
 .custom-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
+    padding: .9rem 1.4rem;
     border: none;
-    border-radius: 41px;
+    border-radius: 2.5rem;
     background: #E02C6D;
     color: white;
-    font-size: 13px;
+    font-size: .9em;
     cursor: pointer;
     position: relative;
 }
@@ -99,21 +106,24 @@ li {
 }
 
 .camera-section-right {
+    max-width: 26rem;
+    max-height: 26rem;
+    margin: 0 auto;
     background-image: url(../images/Circle\ design.png);
     background-size: cover
 }
 
 .camera-section-description {
-    padding: 15px 0 30px 0;
+    padding: .9rem 0 2rem 0;
 }
 
 /* Company Logo Area */
 .company-logo {
-    margin: 50px 0;
+    margin: 3rem 0 2rem 0;
+    padding: .3rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
     flex-wrap: wrap;
 }
 
@@ -122,20 +132,21 @@ li {
 
 main {
     width: 100%;
-    padding: 5px 50px;
+    padding: .3rem 3rem;
     margin: 0 auto;
 }
 
 h2 {
-    padding: 30px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2rem 0;
     text-align: center;
+
 }
 
 .products {
-    padding: 5px;
-    border: 1px dotted crimson;
+    padding: .3rem;
     display: grid;
-    gap: 20px;
+    gap: 1.3rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     justify-content: space-around;
@@ -144,11 +155,10 @@ h2 {
 
 .product-details {
     width: 100%;
-    padding: 16px;
-    border-radius: 5px;
-    border-radius: 5px;
+    padding: 1rem;
+    border-radius: .3rem;
     background: #FFF;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 3.5rem 0px rgba(0, 0, 0, 0.15);
 }
 
 .product-details img {
@@ -157,9 +167,9 @@ h2 {
 }
 
 .product-description {
-    padding: 10px 0;
+    padding: .7rem 0;
     font-family: Inter;
-    font-size: 11px;
+    font-size: .7em;
     font-weight: 700;
     line-height: 140%;
     letter-spacing: 0.200px;
@@ -167,9 +177,9 @@ h2 {
 
 .see-more {
     text-align: right;
-    padding: 10px 20px;
+    padding: .60rem 1.3rem;
     color: rgba(224, 44, 109, 0.87);
-    font-size: 13px;
+    font-size: .8em;
     cursor: pointer;
     font-weight: 800;
 }
@@ -181,7 +191,7 @@ h2 {
 
 h3,
 h4 {
-    padding: 10px 0;
+    padding: .60rem 0;
 }
 
 .featured-section {
@@ -190,7 +200,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 85px;
+    gap: 5.2rem;
 }
 
 /*Start Footer Section */
@@ -201,7 +211,7 @@ footer {
 }
 
 .footer {
-    gap: 20px;
+    gap: 1.2rem;
     padding: 100px 0;
     background: #0A0826;
     color: #fff;
@@ -217,7 +227,6 @@ footer {
 }
 
 @media screen and (max-width:576px) {
-
     .header-top {
         display: flex;
         flex-direction: column;
@@ -226,17 +235,17 @@ footer {
     }
 
     header {
-        padding: 20px 0 0 10px;
+        padding: 1.5rem 0 0 60rem;
     }
-
+    .header-logo {
+        font-size: 2.5em;
+        word-spacing: -1px;
+    }
     .camera-section-description {
         text-align: center;
     }
 
-    .header-logo {
-        font-size: 30px;
-        word-spacing: -1px;
-    }
+
 
     ul {
         gap: 10px;
@@ -280,6 +289,7 @@ footer {
         padding: 0 20px;
 
     }
+
     .featured-section {
         text-align: center;
         margin: 0 0;
@@ -288,7 +298,7 @@ footer {
         justify-content: center;
     }
 
-    
+
 
     .products {
         display: flex;
