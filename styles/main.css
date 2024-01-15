@@ -102,7 +102,7 @@ li {
 }
 
 .arrow {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 .60rem;
 }
 
 .camera-section-right {
@@ -221,11 +221,72 @@ footer {
     align-items: center;
 }
 
+/* Pad and Medium Devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    p {
+        text-align: center;
+    }
 
-@media screen and (max-width: 423px) {
-    .header-logo {}
+    #camera-section-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .header-top,
+    .camera-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        padding: 70px 0 10px 0;
+    }
+
+    .camera-section {
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+    }
+
+    .camera-section-left {
+        padding: 0;
+        margin: 0;
+    }
+
+    .company-logo {
+        gap: 40px 30px;
+        justify-content: center;
+    }
+
+    .featured-section {
+        text-align: center;
+        margin: 20px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-content: center;
+    }
+
+    .custom-button {
+        width: 60%;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
 }
 
+
+/* Start the responsive area */
 @media screen and (max-width:576px) {
     .header-top {
         display: flex;
@@ -235,7 +296,7 @@ footer {
     }
 
     header {
-        padding: 1.5rem 0 0 60rem;
+        padding: 1.5rem 0 0 .60rem;
     }
     .header-logo {
         font-size: 2.5em;
@@ -244,8 +305,6 @@ footer {
     .camera-section-description {
         text-align: center;
     }
-
-
 
     ul {
         gap: 10px;
@@ -312,66 +371,3 @@ footer {
     }
 }
 
-/* Pad and Medium Devices */
-@media screen and (min-width:576px) and (max-width:992px) {
-    p {
-        text-align: center;
-    }
-
-    #camera-section-title {
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .header-top,
-    .camera-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    header {
-        padding: 70px 0 10px 0;
-    }
-
-    .camera-section {
-        flex-direction: column-reverse;
-        padding: 0;
-        margin: 0;
-    }
-
-    .camera-section-left {
-        padding: 0;
-        margin: 0;
-    }
-
-    .company-logo {
-        gap: 40px 30px;
-        justify-content: center;
-    }
-
-    .featured-section {
-        text-align: center;
-        margin: 20px 0;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .products {
-        display: flex;
-        flex-direction: column;
-
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        align-content: center;
-    }
-
-    .custom-button {
-        width: 60%;
-        margin: 0 auto;
-        padding: 10px 20px;
-    }
-}
